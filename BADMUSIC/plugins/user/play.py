@@ -49,7 +49,7 @@ SPAM_THRESHOLD = 2
             "cplayforce",
             "cvplayforce",
         ],
-        prefixes=["/", "!", "%", ",", "@", "#"],
+        prefixes=[".", "!", "%", ",", "@", "#"],
     )
     & filters.group
     & ~BANNED_USERS
