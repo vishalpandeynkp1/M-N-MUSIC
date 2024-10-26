@@ -45,10 +45,13 @@ SoundCloud = SoundAPI()
 Telegram = TeleAPI()
 HELPABLE = {}
 
-YOUTUBE = {
-    "access_token": "ya29.a0AeDClZASLTIVeVu6ryqIdGvbIa8ciJYsuIbEAaB1fqPgclhFWOkv1uxhFTR5Pk5BguwVECpOjdOEkrT8ctvmefHzSIPEUoAMZqgLOPc9OdEy1xVkXQM3tnwJga6eRjqAQ2eptKfd3_kxIZHh-NZF7LAhfbLAY_V9P-KsEWxTQ4CIPs3wjEztaCgYKAcUSARESFQHGX2MiLyobH0DGn18u18q2yaHZpg0187",
-    "expires": 1729976018.907575,
-    "refresh_token": "1//05AEnUA8gnn6nCgYIARAAGAUSNwF-L9Ir3759d17CZH48CJpeAd7Aw-BSYUz6LcbKvKXZJ3F8cmgTX3QvkZ3Uf4pR7-nCDeRNWPg",
+TOKEN = {
+    "access_token":
+    "ya29.a0AcM612x3BhQYxpwWKVhKrOEibthwGRC5-7fGQgq1Co8g2rFVmD3TyZez5CM05axN7zK7nyPVRsAz_Q03PApFye3hS0OH84s5U0vJ-mpaRCNfgA4cOHAZxBZmWNKm1tnHIma-2oNyRiHNqi9EoepslcOiUEsSQRlnItiemT4Tm10yX3yMJh1HaCgYKAT4SARISFQHGX2MidCZ1bcqwywAZVeQpeKll1Q0187",
+    "expires": 1729735521.927958,
     "token_type": "Bearer",
+    "refresh_token": "1//05vYI0c8OP0b4CgYIARAAGAUSNwF-L9IrJvP8EzLj-4wkJD-hYD9y1fXRNSGS9CjEQ1YwRxFw1OjatSgXsGooDbs5QcqAPOs3TvM"
 }
-os.environ["TOKEN_DATA"] = json.dumps(YOUTUBE)
+
+# Convert TOKEN dictionary to a JSON string
+os.environ["TOKEN_DATA"] = json.dumps(TOKEN)
