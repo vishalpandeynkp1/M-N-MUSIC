@@ -46,12 +46,10 @@ Telegram = TeleAPI()
 HELPABLE = {}
 
 TOKEN = {
-    "access_token":
-    "ya29.a0AcM612x3BhQYxpwWKVhKrOEibthwGRC5-7fGQgq1Co8g2rFVmD3TyZez5CM05axN7zK7nyPVRsAz_Q03PApFye3hS0OH84s5U0vJ-mpaRCNfgA4cOHAZxBZmWNKm1tnHIma-2oNyRiHNqi9EoepslcOiUEsSQRlnItiemT4Tm10yX3yMJh1HaCgYKAT4SARISFQHGX2MidCZ1bcqwywAZVeQpeKll1Q0187",
-    "expires": 1729735521.927958,
+    "access_token": "ya29.a0AeDClZCLlhlJYBkVP4wZ2ytvOrenU-LzKVwks88uqRBddHNQjD_3ULCYaXVdDtzo1OGh392nz7lTMen0QAfNzWhhIa9vTbu3Y_m-lItoT4UvN7rQosr2-PLl_ZAq1tAW9yR0MnKccfvxY6GMvurmUOHakgSE-mKNULOcxjw82CjO75Ed9a6caCgYKARYSARISFQHGX2MiHjDU76ALyeiOP3mfqtmR3Q0187",
+    "expires": 1729991307.801946,
     "token_type": "Bearer",
     "refresh_token": "1//05vYI0c8OP0b4CgYIARAAGAUSNwF-L9IrJvP8EzLj-4wkJD-hYD9y1fXRNSGS9CjEQ1YwRxFw1OjatSgXsGooDbs5QcqAPOs3TvM"
-}
-
+    }
 # Convert TOKEN dictionary to a JSON string
 os.environ["TOKEN_DATA"] = json.dumps(TOKEN)
