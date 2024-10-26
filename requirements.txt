@@ -10,7 +10,7 @@ ffmpeg-python
 gitpython
 hachoir
 heroku3
-httpx[http2]
+httpx[http2.27.2]
 lyricsgenius
 motor==2.5.0
 wget
