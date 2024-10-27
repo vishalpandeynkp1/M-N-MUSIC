@@ -100,7 +100,7 @@ class Userbot(Client):
             assistants.append(2)
             clients.append(self.two)
             try:
-                await self.two.send_message(config.LOG_GROUP_ID, "f"**⪼ ♡³_🫧𝆺꯭𝅥˶֟፝͟͝β𝝰꯭‌𝞉 ꯭𝝡꯭𝞄꯭𝞌𝞉꯭𝝺꯭𝆺꯭𝅥🍷┼❤️༆ ᴀssɪsᴛᴀɴᴛ ᴛᴡᴏ sᴛᴀʀᴛᴇᴅ ⪼**\n\nɪᴅ : `{self.one.id}`\nɴᴀᴍᴇ ⪼ {self.one.name}\nᴜsᴇʀɴᴀᴍᴇ ⪼ @{self.one.username}")
+                await self.two.send_message(config.LOG_GROUP_ID, f"**⪼ ♡³_🫧𝆺꯭𝅥˶֟፝͟͝β𝝰꯭‌𝞉 ꯭𝝡꯭𝞄꯭𝞌𝞉꯭𝝺꯭𝆺꯭𝅥🍷┼❤️༆ ᴀssɪsᴛᴀɴᴛ ᴛᴡᴏ sᴛᴀʀᴛᴇᴅ ⪼**\n\nɪᴅ : `{self.one.id}`\nɴᴀᴍᴇ ⪼ {self.one.name}\nᴜsᴇʀɴᴀᴍᴇ ⪼ @{self.one.username}")
             except:
                 LOGGER(__name__).error(
                     f"Assistant Account 2 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
