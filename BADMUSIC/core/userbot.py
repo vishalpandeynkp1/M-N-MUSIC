@@ -73,7 +73,7 @@ class Userbot(Client):
             assistants.append(1)
             clients.append(self.one)
             try:
-                await self.one.send_message(config.LOG_GROUP_ID, "Assistant Started")
+                await self.one.send_message(config.LOG_GROUP_ID, f"**⪼ {config.MUSIC_BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴏɴᴇ sᴛᴀʀᴛᴇᴅ ⪼**\n\nɪᴅ : `{self.one.id}`\nɴᴀᴍᴇ ⪼ {self.one.name}\nᴜsᴇʀɴᴀᴍᴇ ⪼ @{self.one.username}")
             except:
                 LOGGER(__name__).info(
                     f"Assistant Account 1 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
@@ -101,7 +101,7 @@ class Userbot(Client):
             assistants.append(2)
             clients.append(self.two)
             try:
-                await self.two.send_message(config.LOG_GROUP_ID, "Assistant Started")
+                await self.two.send_message(config.LOG_GROUP_ID, "f"**⪼ {config.MUSIC_BOT_NAME} ᴀssɪsᴛᴀɴᴛ ᴛᴡᴏ sᴛᴀʀᴛᴇᴅ ⪼**\n\nɪᴅ : `{self.one.id}`\nɴᴀᴍᴇ ⪼ {self.one.name}\nᴜsᴇʀɴᴀᴍᴇ ⪼ @{self.one.username}"")
             except:
                 LOGGER(__name__).error(
                     f"Assistant Account 2 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
