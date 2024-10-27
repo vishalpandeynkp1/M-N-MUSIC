@@ -20,7 +20,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS, LOG_GROUP_ID, OWNER_ID, lyrical
 from BADMUSIC import LOGGER, Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from BADMUSIC.core.call import VIP
+from BADMUSIC.core.call import BAD
 from BADMUSIC.utils import seconds_to_min, time_to_seconds
 from BADMUSIC.utils.channelplay import get_channeplayCB
 from BADMUSIC.utils.database import add_served_chat, get_assistant, is_video_allowed
