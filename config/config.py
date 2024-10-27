@@ -17,6 +17,8 @@ API_HASH = getenv("API_HASH")
 ## Get it from @Botfather in Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
 
+# Token allow for access youtube songs. [ True = use token data, False = use cookies ]
+TOKEN_ALLOW = os.getenv("TOKEN_ALLOW", "False")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
 DB_NAME = "badDB"
