@@ -106,8 +106,6 @@ pprint "\nOWNER ID:"; color_reset; read ownid
 pprint "\nMONGO DB URI: "; color_reset; read mongo_db
 pprint "\nLOG GROUP ID: "; color_reset; read logger
 pprint "\nSTRING SESSION: "; color_reset; read string_session
-pprint "\nTOKEN ALLOW: "; color_reset; read token_allow
-pprint "\nTOKEN DATA: "; color_reset; read token_data
 
 pprint "\n\nProcessing your vars, wait a while !" "cgreen"
 
@@ -121,8 +119,6 @@ BOT_TOKEN = $bot_token
 MONGO_DB_URI = $mongo_db
 LOG_GROUP_ID = $logger
 STRING_SESSION = $string_session
-TOKEN_ALLOW = $token_allow
-TOKEN_DATA = $token_data
 OWNER_ID = $ownid""" > .env
 clear
 
