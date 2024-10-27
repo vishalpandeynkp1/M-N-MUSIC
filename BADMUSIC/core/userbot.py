@@ -1,16 +1,7 @@
 # Copyright (C) 2024 by Badhacker98@Github, < https://github.com/Badhacker98 >.
 # Owner https://t.me/ll_BAD_MUNDA_ll
 
-import pyromod.listen  # noqa
-from pyrogram.enums import ChatMemberStatus
-from pyrogram.types import (
-    BotCommand,
-    BotCommandScopeAllChatAdministrators,
-    BotCommandScopeAllGroupChats,
-    BotCommandScopeAllPrivateChats,
-    InlineKeyboardButton,
-    InlineKeyboardMarkup,
-)
+
 from typing import Callable, Optional
 
 import pyrogram
@@ -82,7 +73,7 @@ class Userbot(Client):
             assistants.append(1)
             clients.append(self.one)
             try:
-                await self.one.send_message(config.LOG_GROUP_ID, f"╔════❰💓ᴡᴇʟᴄᴏᴍᴇ💓❱════❍⊱❁۪۪\n║\n║┣⪼💫 ᴀssɪsᴛᴀɴᴛ ᴏɴᴇ sᴛᴀʀᴛᴇᴅ ❤️\n║\n║┣⪼ {self.name}\n║\n║┣⪼🕊️ ɪᴅ:- `{self.id}` \n║\n║┣⪼🤡 @{self.username} \n║ \n║┣⪼💀 ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ 🌸\n║\n╚════════════════❍⊱❁")
+                await self.one.send_message(config.LOG_GROUP_ID, "💫 ᴀssɪsᴛᴀɴᴛ ᴏɴᴇ sᴛᴀʀᴛᴇᴅ ❤️")
             except:
                 LOGGER(__name__).info(
                     f"Assistant Account 1 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
@@ -110,7 +101,7 @@ class Userbot(Client):
             assistants.append(2)
             clients.append(self.two)
             try:
-                await self.two.send_message(config.LOG_GROUP_ID, f"╔════❰💓ᴡᴇʟᴄᴏᴍᴇ💓❱════❍⊱❁۪۪\n║\n║┣⪼💫 ᴀssɪsᴛᴀɴᴛ ᴛᴡᴏ sᴛᴀʀᴛᴇᴅ ❤️\n║\n║┣⪼ {self.name}\n║\n║┣⪼🕊️ ɪᴅ:- `{self.id}` \n║\n║┣⪼🤡 @{self.username} \n║ \n║┣⪼💀 ᴛʜᴀɴᴋs ғᴏʀ ᴜsɪɴɢ 🌸\n║\n╚════════════════❍⊱❁")
+                await self.two.send_message(config.LOG_GROUP_ID, "💫 ᴀssɪsᴛᴀɴᴛ ᴛᴡᴏ sᴛᴀʀᴛᴇᴅ ❤️")
             except:
                 LOGGER(__name__).error(
                     f"Assistant Account 2 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
