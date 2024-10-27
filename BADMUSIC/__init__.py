@@ -1,7 +1,7 @@
 import json
 import os
 
-from BADMUSIC.core.bot import BADBot
+from BADMUSIC.core.bot import BADBOT
 from BADMUSIC.core.dir import dirr
 from BADMUSIC.core.git import git
 from BADMUSIC.core.userbot import Userbot
@@ -22,7 +22,7 @@ sudo()
 
 badboy()
 
-app = BADBot()
+app = BADBOT()
 
 userbot = Userbot()
 
