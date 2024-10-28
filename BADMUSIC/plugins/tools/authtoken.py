@@ -107,8 +107,8 @@ async def check_auth_token():
     & SUDOERS
 )
 async def list_formats(client, message):
-    status_message = "**Status:**\n\n"
-    status_message += "Cookies: Checking...\nAuth Token: Checking..."
+    status_message = "sᴛᴀᴛᴜs⚣\n\n"
+    status_message += "ᴄᴏᴏᴋɪᴇs⚣︎ ᴄʜᴇᴄᴋɪɴɢ ... \nᴀᴜᴛʜ ᴛᴏᴋᴇɴ⚣︎ ᴄʜᴇᴄᴋɪɴɢ..."
     status_msg = await message.reply_text(status_message)
 
     cookie_status = await check_cookies("https://www.youtube.com/watch?v=LLF3GMfNEYU")
