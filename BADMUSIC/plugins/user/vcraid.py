@@ -10,8 +10,6 @@ from random import choice
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from pytgcalls import StreamType
-from pytgcalls.types.input_stream.quality import (HighQualityAudio, HighQualityVideo,
-                                                  LowQualityVideo, MediumQualityVideo)
 
 from BADMUSIC.utils.queues import QUEUE, add_to_queue, get_queue, clear_queue
 from BADMUSIC.misc import SUDOERS as SUDO_USER
