@@ -151,7 +151,7 @@ class Greetings(MongoDB):
                 "cleangoodbye": False,
                 "cleanservice": False,
                 "goodbye_text": "sᴀᴅ ᴛᴏ sᴇᴇ ʏᴏᴜ ʟᴇᴀᴠɪɴɢ {first}.\ ᴛᴀᴋᴇ ᴄᴀʀᴇ! 🌸",
-                "welcome_text": "ʜᴇʏ {first}, ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {chatname} 🥀!",
+                "welcome_text": "ʜᴇʏ {first}, ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {chatname} 🥀",
                 "welcome": True,
                 "goodbye": True,
                 "welcome_media":False,
