@@ -29,7 +29,7 @@ OWNER = config.OWNER_ID
 class app(Client):
     def __init__(self):
         super().__init__(
-            name="shizuchat",
+            name="app",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             lang_code="en",
