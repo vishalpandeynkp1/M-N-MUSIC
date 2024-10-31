@@ -5,6 +5,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 from config import LOG_FILE_NAME
+import config
 
 logging.basicConfig(
     level=logging.INFO,
@@ -15,6 +16,16 @@ logging.basicConfig(
         logging.StreamHandler(),
     ],
 )
+
+# welcome..
+logging.getLogger("pyrogram").setLevel(logging.ERROR)
+LOGGER = logging.getLogger(__name__)
+boot = time.time()
+mongodb = MongoCli(config.MONGO_DB_URI)
+db = mongodb.Badmusic
+mongo = MongoClient(config.MONGO_DB_URI)
+OWNER = config.OWNER_ID
+
 
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 logging.getLogger("apscheduler").setLevel(logging.ERROR)
