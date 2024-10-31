@@ -2,6 +2,7 @@ import logging
 import pytz
 import time
 from pymongo import MongoClient
+from config import LOG_FILE_NAME
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from Abg import patch
 from motor.motor_asyncio import AsyncIOMotorClient as MongoCli
@@ -19,7 +20,7 @@ logging.basicConfig(
     level=logging.INFO,
 )
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
-LOGGER = logging.getLogger(__name__)
+SUKH2 = logging.getLogger(__name__)
 boot = time.time()
 mongodb = MongoCli(config.MONGO_DB_URI)
 db = mongodb.Badmusic
@@ -47,3 +48,7 @@ class app(Client):
 
     async def stop(self):
         await super().stop()
+
+
+def SUKH2(name: str) -> logging.Logger:
+    return logging.getLogger(name)
