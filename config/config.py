@@ -19,7 +19,7 @@ API_HASH = getenv("API_HASH")
 BOT_TOKEN = getenv("BOT_TOKEN")
 
 # Bot id
-BOT_ID = int(getenv("BOT_ID", "7454086236"))
+BOT_ID = int(getenv("BOT_ID", "7634367413"))
 
 # Token allow for access youtube songs. [ True = use token data, False = use cookies ]
 TOKEN_ALLOW = os.getenv("TOKEN_ALLOW", "False")
