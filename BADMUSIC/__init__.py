@@ -1,6 +1,5 @@
 import json
 import os
-import logging
 import config
 import pytz
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
@@ -14,13 +13,6 @@ from BADMUSIC.misc import dbb, heroku, sudo
 
 from .logging import LOGGER
 
-logging.getLogger("pyrogram").setLevel(logging.ERROR)
-LOGGER = logging.getLogger(__name__)
-boot = time.time()
-mongodb = MongoCli(config.MONGO_DB_URI)
-db = mongodb.Badmusic
-mongo = MongoClient(config.MONGO_DB_URI)
-OWNER = config.OWNER_ID
 
 #time zone
 TIME_ZONE = pytz.timezone(config.TIME_ZONE)
