@@ -12,7 +12,6 @@ from BADMUSIC.core.youtube import badmunda
 from BADMUSIC.misc import dbb, heroku, sudo
 
 from .logging import LOGGER
-from .loggeer import SUKH2
 
 
 #time zone
