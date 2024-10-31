@@ -70,7 +70,7 @@ class MongoDB:
 
 def __connect_first():
     _ = MongoDB("test")
-    LOGGER.info("Initialized Database!\n")
+    loggeer.info("Initialized Database!\n")
 
 
 __connect_first()
