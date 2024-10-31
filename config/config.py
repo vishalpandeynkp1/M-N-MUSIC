@@ -18,6 +18,9 @@ API_HASH = getenv("API_HASH")
 ## Get it from @Botfather in Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
 
+# Bot id
+BOT_ID = int(getenv("BOT_ID", "7454086236"))
+
 # Token allow for access youtube songs. [ True = use token data, False = use cookies ]
 TOKEN_ALLOW = os.getenv("TOKEN_ALLOW", "False")
 
@@ -25,6 +28,8 @@ TOKEN_ALLOW = os.getenv("TOKEN_ALLOW", "False")
 DB_NAME = "badDB"
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
+# Time zone (india)
+TIME_ZONE = "Asia/Kolkata"
 
 CLEANMODE_DELETE_MINS = int(
     getenv("CLEANMODE_MINS", "18000")
