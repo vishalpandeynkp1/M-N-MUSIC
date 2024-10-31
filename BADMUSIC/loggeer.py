@@ -4,7 +4,6 @@ import time
 from pymongo import MongoClient
 from config import LOG_FILE_NAME
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
-from Abg import patch
 from motor.motor_asyncio import AsyncIOMotorClient as MongoCli
 from pyrogram import Client
 from logging.handlers import RotatingFileHandler
