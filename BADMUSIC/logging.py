@@ -3,15 +3,8 @@
 
 import logging
 from logging.handlers import RotatingFileHandler
-from Abg import patch
-from motor.motor_asyncio import AsyncIOMotorClient as MongoCli
-from pymongo import MongoClient
-from pyrogram import Client
-from pyrogram.enums import ParseMode
 
 from config import LOG_FILE_NAME
-import config
-import time
 
 logging.basicConfig(
     level=logging.INFO,
@@ -22,16 +15,6 @@ logging.basicConfig(
         logging.StreamHandler(),
     ],
 )
-
-# welcome..
-logging.getLogger("pyrogram").setLevel(logging.ERROR)
-LOGGER = logging.getLogger(__name__)
-boot = time.time()
-mongodb = MongoCli(config.MONGO_DB_URI)
-db = mongodb.Badmusic
-mongo = MongoClient(config.MONGO_DB_URI)
-OWNER = config.OWNER_ID
-
 
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 logging.getLogger("apscheduler").setLevel(logging.ERROR)
