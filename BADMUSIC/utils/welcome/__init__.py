@@ -7,18 +7,18 @@ from BADMUSIC import LOGGER
 from config import MONGO_DB_URI, DB_NAME
 
 try:
-    Badmusic_db_client = MongoClient(MONGO_DB_URI)
+    shizuchat_db_client = MongoClient(MONGO_URL)
 except PyMongoError as f:
     LOGGER.error(f"Error in Mongodb: {f}")
     exiter(1)
-Badmusic_main_db = Badmusic_db_client[DB_NAME]
+shizuchat_main_db = shizuchat_db_client[DB_NAME]
 
 
 class MongoDB:
     """Class for interacting with Bot database."""
 
     def __init__(self, collection) -> None:
-        self.collection = Badmusic_main_db[collection]
+        self.collection = shizuchat_main_db[collection]
 
     # Insert one entry into collection
     def insert_one(self, document):
@@ -65,11 +65,11 @@ class MongoDB:
 
     @staticmethod
     def close():
-        return Badmusic_db_client.close()
+        return shizuchat_db_client.close()
 
 
 def __connect_first():
-    _ = MONGO_DB_URI("test")
+    _ = MongoDB("test")
     LOGGER.info("Initialized Database!\n")
 
 
