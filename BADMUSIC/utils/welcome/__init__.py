@@ -3,7 +3,7 @@ from sys import exit as exiter
 from pymongo import MongoClient
 from pymongo.errors import PyMongoError
 
-from BADMUSIC import LOGGER
+from BADMUSIC import loggeer
 from config import MONGO_DB_URI, DB_NAME
 
 try:
