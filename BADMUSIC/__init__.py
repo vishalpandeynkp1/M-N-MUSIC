@@ -13,6 +13,13 @@ from BADMUSIC.misc import dbb, heroku, sudo
 
 from .logging import LOGGER
 
+logging.getLogger("pyrogram").setLevel(logging.ERROR)
+LOGGER = logging.getLogger(__name__)
+boot = time.time()
+mongodb = MongoCli(config.MONGO_URL)
+db = mongodb.Badmusic
+mongo = MongoClient(config.MONGO_URL)
+OWNER = config.OWNER_ID
 
 #time zone
 TIME_ZONE = pytz.timezone(config.TIME_ZONE)
