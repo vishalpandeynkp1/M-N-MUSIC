@@ -69,7 +69,7 @@ class MongoDB:
 
 
 def __connect_first():
-    _ = MongoDB("test")
+    _ = MONGO_DB_URI("test")
     LOGGER.info("Initialized Database!\n")
 
 
