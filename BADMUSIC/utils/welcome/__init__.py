@@ -7,7 +7,7 @@ from BADMUSIC import LOGGER
 from config import MONGO_DB_URI, DB_NAME
 
 try:
-    shizuchat_db_client = MongoClient(MONGO_URL)
+    shizuchat_db_client = MongoClient(MONGO_DB_URI)
 except PyMongoError as f:
     LOGGER.error(f"Error in Mongodb: {f}")
     exiter(1)
