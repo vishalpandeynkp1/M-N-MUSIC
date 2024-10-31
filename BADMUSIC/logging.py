@@ -4,7 +4,7 @@
 import logging
 from logging.handlers import RotatingFileHandler
 from Abg import patch
-from motor.motor_asyncio import AsyncIOMotorClient as MongoCli
+from motor.motor_asyncio import AsyncIOMotorClient as MongoClit
 from pyrogram import Client
 from pyrogram.enums import ParseMode
 
