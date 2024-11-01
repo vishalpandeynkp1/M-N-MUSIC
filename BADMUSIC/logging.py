@@ -2,9 +2,13 @@
 # Owner https://t.me/ll_BAD_MUNDA_ll
 
 import logging
+from pymongo import MongoClient
+import time
+from motor.motor_asyncio import AsyncIOMotorClient as MongoCli
 from logging.handlers import RotatingFileHandler
 
 from config import LOG_FILE_NAME
+import config 
 
 logging.basicConfig(
     level=logging.INFO,
@@ -17,6 +21,12 @@ logging.basicConfig(
 )
 
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
+LOGGERR = logging.getLogger(__name__)
+boot = time.time()
+mongodb = MongoCli(config.MONGO_DB_URI)
+db = mongodb.Anonymous
+mongo = MongoClient(config.MONGO_DB_URI)
+OWNER = config.OWNER_ID
 logging.getLogger("apscheduler").setLevel(logging.ERROR)
 logging.getLogger("pytgcalls").setLevel(logging.ERROR)
 logging.getLogger("pymongo").setLevel(logging.ERROR)
