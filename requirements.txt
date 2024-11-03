@@ -29,6 +29,7 @@ py-tgcalls==1.2.9
 ntgcalls==1.1.2
 Abg==2.3.1
 python-dotenv
+pyyaml
 requests
 speedtest-cli
 spotipy
