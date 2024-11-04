@@ -18,6 +18,9 @@ API_HASH = getenv("API_HASH")
 ## Get it from @Botfather in Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
 
+# Get Your bot username
+BOT_USERNAME = getenv("BOT_USERNAME" , "FlopMusic_Bot")
+
 # Bot id
 BOT_ID = int(getenv("BOT_ID", "7634367413"))
 
