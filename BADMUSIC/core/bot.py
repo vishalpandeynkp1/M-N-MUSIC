@@ -1,13 +1,12 @@
 # Copyright (C) 2024 by Badhacker98@Github, < https://github.com/Badhacker98 >.
 # Owner https://t.me/ll_BAD_MUNDA_ll
 
+import asyncio
+import threading
+
 import uvloop
-
-uvloop.install()
-
-import pyrogram
-import pyromod.listen  # noqa
-from pyrogram import Client
+from flask import Flask
+from pyrogram import Client, idle
 from pyrogram.enums import ChatMemberStatus
 from pyrogram.types import (
     BotCommand,
@@ -22,7 +21,22 @@ import config
 
 from ..logging import LOGGER
 
+uvloop.install()
 
+# Flask app initialize
+app = Flask(__name__)
+
+
+@app.route("/")
+def home():
+    return "Bot is running"
+
+
+def run():
+    app.run(host="0.0.0.0", port=8000, debug=False)
+
+
+#BADBOT
 class BADBOT(Client):
     def __init__(self):
         LOGGER(__name__).info(f"Starting Bot")
