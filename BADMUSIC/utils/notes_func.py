@@ -4,7 +4,7 @@ import html
 import re
 from pyrogram.types import InlineKeyboardMarkup
 from BADMUSIC import app
-from BADMUSIC.mongo.notesdb import GetNote
+from BADMUSIC.utils.notesdb import GetNote
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from BADMUSIC.utils.msg_types import button_markdown_parser
 
