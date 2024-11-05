@@ -260,7 +260,7 @@ async def start_comm(client, message: Message, _):
 
             await bads.edit_text("**🤡ᴡᴇʟᴄᴏᴍᴇ ᴍᴜsɪᴄ ʙᴏᴛ.**")
             await bads.edit_text("**🤡ᴡᴇʟᴄᴏᴍᴇ ᴍᴜsɪᴄ ʙᴏᴛ....**")
-            umm = await m.reply_sticker(sticker=random.choice(STICKER))
+            umm = await bads.reply_sticker(sticker=random.choice(STICKER))
             if message.chat.photo:
 
                 userss_photo = await app.download_media(
