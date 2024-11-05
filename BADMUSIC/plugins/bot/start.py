@@ -231,7 +231,7 @@ async def start_comm(client, message: Message, _):
             out = music_start_panel(_)
             bad = await message.reply_text(f"**ʜᴇʏ, ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ 💞**")
             await bad.delete()
-            umm = await bads.reply_sticker(sticker=random.choice(STICKER))
+            umm = await bad.reply_sticker(sticker=random.choice(STICKER))
             await bad.delete()
             if message.chat.photo:
 
