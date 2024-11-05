@@ -40,6 +40,11 @@ from .help import paginate_modules
 
 loop = asyncio.get_running_loop()
 
+STICKER = [
+    "CAACAgUAAx0CYlaJawABBy4vZaieO6T-Ayg3mD-JP-f0yxJngIkAAv0JAALVS_FWQY7kbQSaI-geBA",
+    "CAACAgUAAx0CYlaJawABBy4rZaid77Tf70SV_CfjmbMgdJyVD8sAApwLAALGXCFXmCx8ZC5nlfQeBA",
+    "CAACAgUAAx0CYlaJawABBy4jZaidvIXNPYnpAjNnKgzaHmh3cvoAAiwIAAIda2lVNdNI2QABHuVVHgQ",
+]
 
 @app.on_message(group=-1)
 async def ban_new(client, message):
@@ -255,6 +260,7 @@ async def start_comm(client, message: Message, _):
 
             await bads.edit_text("**🤡ᴡᴇʟᴄᴏᴍᴇ ᴍᴜsɪᴄ ʙᴏᴛ.**")
             await bads.edit_text("**🤡ᴡᴇʟᴄᴏᴍᴇ ᴍᴜsɪᴄ ʙᴏᴛ....**")
+            umm = await m.reply_sticker(sticker=random.choice(STICKER))
             if message.chat.photo:
 
                 userss_photo = await app.download_media(
