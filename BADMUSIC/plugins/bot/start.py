@@ -68,7 +68,7 @@ async def ban_new(client, message):
 async def start_comm(client, message: Message, _):
     chat_id = message.chat.id
     await add_served_user(message.from_user.id)
-    await message.react("🤡")
+    await message.react("❤️")
     if len(message.text.split()) > 1:
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
@@ -231,37 +231,10 @@ async def start_comm(client, message: Message, _):
 
         try:
             out = music_start_panel(_)
-            bad = await message.reply_text(f"**sᴛᴀʀᴛɪɴɢ ✰︎❣️.....**")
-            await bad.edit_text(f"**sᴛᴀʀᴛɪɴɢ ✰︎.❣️....**")
-            await bad.edit_text(f"**sᴛᴀʀᴛɪɴɢ ✰︎..❣️...**")
-            await bad.edit_text(f"**sᴛᴀʀᴛɪɴɢ ✰︎...❣️..**")
-            await bad.edit_text(f"**sᴛᴀʀᴛɪɴɢ ✰︎....❣️.**")
-            await bad.edit_text(f"**sᴛᴀʀᴛɪɴɢ ✰︎.....❣️**")
-
+            bad = await message.reply_text(f"**ʜᴇʏ, ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ 💞**")
             await bad.delete()
-            bads = await message.reply_text("**🤡ᴡ**")
-            await asyncio.sleep(0.1)
-            await bads.edit_text("**🤡ᴡᴇ**")
-            # await asyncio.sleep(0.1)
-            await bads.edit_text("**🤡ᴡᴇʟ**")
-            #  await asyncio.sleep(0.1)
-            await bads.edit_text("**🤡ᴡᴇʟᴄ**")
-            # await asyncio.sleep(0.1)
-            await bads.edit_text("**🤡ᴡᴇʟᴄᴏ**")
-            # await asyncio.sleep(0.1)
-            await bads.edit_text("**🤡ᴡᴇʟᴄᴏᴍ**")
-            # await asyncio.sleep(0.1)
-            await bads.edit_text("**🤡ᴡᴇʟᴄᴏᴍᴇ**")
-            # await asyncio.sleep(0.1)
-            await bads.edit_text("**🤡ᴡᴇʟᴄᴏᴍᴇ ᴍᴜsɪᴄ**")
-            # await asyncio.sleep(0.1)
-            await bads.edit_text("**🤡ᴡᴇʟᴄᴏᴍᴇ ᴍᴜsɪᴄ ʙᴏᴛ**")
-
-            await bads.edit_text("**🤡ᴡᴇʟᴄᴏᴍᴇ ᴍᴜsɪᴄ ʙᴏᴛ....**")
-
-            await bads.edit_text("**🤡ᴡᴇʟᴄᴏᴍᴇ ᴍᴜsɪᴄ ʙᴏᴛ.**")
-            await bads.edit_text("**🤡ᴡᴇʟᴄᴏᴍᴇ ᴍᴜsɪᴄ ʙᴏᴛ....**")
             umm = await bads.reply_sticker(sticker=random.choice(STICKER))
+            await bad.delete()
             if message.chat.photo:
 
                 userss_photo = await app.download_media(
