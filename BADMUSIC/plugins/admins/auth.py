@@ -1,5 +1,3 @@
-
-
 from pyrogram import filters
 from pyrogram.types import Message
 
@@ -143,7 +141,7 @@ async def authusers(client, message: Message, _):
         await message.reply_text(text)
 
 
-__MODULE__ = "Auᴛʜ"
+__MODULE__ = "ᴀᴜᴛʜ"
 __HELP__ = """
 
 <b>Aᴜᴛʜ Usᴇʀs ᴄᴀɴ ᴜsᴇ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs ᴡɪᴛʜᴏᴜᴛ ᴀᴅᴍɪɴ ʀɪɢʜᴛs ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ.</b>
