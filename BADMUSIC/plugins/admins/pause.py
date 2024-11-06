@@ -33,7 +33,7 @@ async def pause_admin(cli, message: Message, _, chat_id):
     )
 
 
-__MODULE__ = "Pause"
+__MODULE__ = "ᴘᴀᴜsᴇ"
 __HELP__ = """
 **Pause Music**
 
