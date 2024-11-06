@@ -120,7 +120,7 @@ async def download_song(_, message):
             os.remove(files)
 
 
-__MODULE__ = "Sᴏɴɢs"
+__MODULE__ = "sᴏɴɢs"
 __HELP__ = """ 
 
 ## sᴏɴɢs/ sᴏɴɢ ᴍᴘ3 ᴠɪᴅᴇᴏ ᴍᴘ4 ᴅᴏᴡɴʟᴀᴏᴅ.
