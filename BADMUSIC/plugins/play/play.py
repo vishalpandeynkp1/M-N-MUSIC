@@ -735,7 +735,7 @@ async def slider_queries(client, CallbackQuery, _):
         )
 
 
-__MODULE__ = "Plᴀʏ"
+__MODULE__ = "ᴘʟᴀʏ"
 __HELP__ = """
 <b>★ ᴘʟᴀʏ , ᴠᴘʟᴀʏ , ᴄᴘʟᴀʏ</b> - Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs
 <b>★ ᴘʟᴀʏғᴏʀᴄᴇ , ᴠᴘʟᴀʏғᴏʀᴄᴇ , ᴄᴘʟᴀʏғᴏʀᴄᴇ</b> - FᴏʀᴄᴇPʟᴀʏ Cᴏᴍᴍᴀɴᴅs
