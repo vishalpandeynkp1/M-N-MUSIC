@@ -1,5 +1,3 @@
-
-
 from pyrogram import filters
 from pyrogram.types import Message
 
@@ -89,7 +87,7 @@ async def sudoers_list(client, message: Message, _):
         return await mystic.edit_text(msg)
 
 
-__MODULE__ = "B-ʟɪsᴛ"
+__MODULE__ = "ʙ-ʟɪsᴛ"
 __HELP__ = """
 <b>✧ /blacklistchat</b> [ᴄʜᴀᴛ ɪᴅ] - Bʟᴀᴄᴋʟɪsᴛ ᴀɴʏ ᴄʜᴀᴛ ғʀᴏᴍ ᴜsɪɴɢ Mᴜsɪᴄ Bᴏᴛ
 <b>✧ /whitelistchat</b> [ᴄʜᴀᴛ ɪᴅ] - Wʜɪᴛᴇʟɪsᴛ ᴀɴʏ ʙʟᴀᴄᴋʟɪsᴛᴇᴅ ᴄʜᴀᴛ ғʀᴏᴍ ᴜsɪɴɢ Mᴜsɪᴄ Bᴏᴛ
