@@ -369,7 +369,7 @@ async def go_to_home(client, callback_query: CallbackQuery, _):
     )
 
 
-__MODULE__ = "Boᴛ"
+__MODULE__ = "ʙᴏᴛ"
 __HELP__ = f"""
 <b>✦ c sᴛᴀɴᴅs ғᴏʀ ᴄʜᴀɴɴᴇʟ ᴘʟᴀʏ.</b>
 
