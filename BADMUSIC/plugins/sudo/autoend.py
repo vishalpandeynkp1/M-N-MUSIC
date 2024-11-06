@@ -1,4 +1,3 @@
-
 from pyrogram import filters
 
 from strings import get_command
