@@ -2,7 +2,6 @@
 # Owner https://t.me/ll_BAD_MUNDA_ll
 
 import os
-
 from inspect import getfullargspec
 
 from pyrogram import filters
