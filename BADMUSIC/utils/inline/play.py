@@ -72,12 +72,6 @@ def stream_markup_timerr(_, videoid, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} •{bar}• {dur}",
-                url=f"https://t.me/{app.username}?startgroup=true",
-            )
-        ],
-        [
-            InlineKeyboardButton(
                 text="✚ ", callback_data=f"bad_playlist {videoid}"
             ),
             InlineKeyboardButton(
@@ -90,6 +84,12 @@ def stream_markup_timerr(_, videoid, chat_id, played, dur):
             InlineKeyboardButton(
                 text="🎵", callback_data=f"downloadaudio {videoid}"
             ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=f"{played} •{bar}• {dur}",
+                url=f"https://t.me/{app.username}?startgroup=true",
+            )
         ],
         [
             InlineKeyboardButton(
@@ -149,12 +149,6 @@ def telegram_markup_timer(_, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} •{bar}• {dur}",
-                url=f"https://t.me/{app.username}?startgroup=true",
-            )
-        ],
-        [
-            InlineKeyboardButton(
                 text="✚", callback_data=f"bad_playlist {videoid}"
             ),
             InlineKeyboardButton(
@@ -167,6 +161,12 @@ def telegram_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(
                 text="🎵 ", callback_data=f"downloadaudio {videoid}"
             ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=f"{played} •{bar}• {dur}",
+                url=f"https://t.me/{app.username}?startgroup=true",
+            )
         ],
         [
             InlineKeyboardButton(
@@ -420,12 +420,6 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_5"],
-                url=f"https://t.me/{app.username}?startgroup=true",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
                 text="✚ ", callback_data=f"bad_playlist {videoid}"
             ),
             InlineKeyboardButton(
@@ -438,6 +432,12 @@ def stream_markup(_, videoid, chat_id):
             InlineKeyboardButton(
                 text="🎵 ", callback_data=f"downloadaudio {videoid}"
             ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=f"{played} •{bar}• {dur}",
+                url=f"https://t.me/{app.username}?startgroup=true",
+            )
         ],
         [
             InlineKeyboardButton(
@@ -641,12 +641,6 @@ def stream_markup_timer2(_, chat_id, played, dur):
     buttons = [
         [
             InlineKeyboardButton(
-                text=f"{played} •{bar}• {dur}",
-                url=f"https://t.me/{app.username}?startgroup=true",
-            )
-        ],
-        [
-            InlineKeyboardButton(
                 text="✚ ", callback_data=f"bad_playlist {videoid}"
             ),
             InlineKeyboardButton(
@@ -659,6 +653,12 @@ def stream_markup_timer2(_, chat_id, played, dur):
             InlineKeyboardButton(
                 text="🎵 ", callback_data=f"downloadaudio {videoid}"
             ),
+        ],
+        [
+            InlineKeyboardButton(
+                text=f"{played} •{bar}• {dur}",
+                url=f"https://t.me/{app.username}?startgroup=true",
+            )
         ],
         [
             InlineKeyboardButton(
