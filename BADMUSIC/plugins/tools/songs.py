@@ -1,6 +1,7 @@
 import os
 from pyrogram import Client, filters
 import youtube_dl
+import asyncio
 
 from BADMUSIC import app
 
@@ -23,10 +24,11 @@ def download_audio(url):
         return f"{info_dict['title']}.mp3"
 
 @app.on_message(filters.command("song"))
-def download_song(client, message):
-    if len(message.command) < 2:
-        message.reply("Please provide a YouTube link.")
+async def download_song(message):
+    if not message.text.startswith("http"):
+        await message.reply("Please provide a YouTube link.")
         return
+    # Continue with your download logic...
 
     url = message.command[1]
     try:
