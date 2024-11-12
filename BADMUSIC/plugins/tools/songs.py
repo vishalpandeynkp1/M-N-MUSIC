@@ -1,6 +1,6 @@
 import os
 from pyrogram import Client, filters
-import yt_dlp as youtube_dl
+import youtube_dl
 import asyncio
 
 from BADMUSIC import app
