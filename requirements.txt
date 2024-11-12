@@ -4,7 +4,6 @@ pyromod
 openai
 aiofiles
 aiohttp
-asyncio
 beautifulsoup4
 dnspython
 ffmpeg-python
@@ -24,7 +23,6 @@ pytube
 pykeyboard
 pyshorteners
 unidecode
-pyromod
 py-tgcalls==1.2.9
 ntgcalls==1.1.2
 Abg==2.3.1
@@ -44,4 +42,3 @@ git+https://github.com/joetats/youtube_search@master
 git+https://github.com/badmunda98/yt-dp-fork
 git+https://github.com/badmunda98/yt-search-python@main
 git+https://github.com/THE-VIP-BOY-OP/yt-dlp-youtube-oauth2
-#git+https://github.com/Vivekkumar-IN/yt-dlp-youtube-oauth2
